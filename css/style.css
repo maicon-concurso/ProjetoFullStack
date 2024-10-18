@@ -2,3 +2,28 @@
     background-color: antiquewhite;
     text-align: center;
 }
+body{
+    font-family: "Merriweather", serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    color: #66BFBF;
+    font-family: "Sacramento", cursive;
+    font-weight: normal;
+    line-height: 2;
+    
+}
+
+h2, h3{
+    font-family: "Montserrat", sans-serif;
+    color: #66BFBF;
+}
+
+h3{
+    color:#11999E
+}
+.efeito{
+    text-decoration: underline;
+}
