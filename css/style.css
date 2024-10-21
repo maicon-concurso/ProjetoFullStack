@@ -27,3 +27,23 @@ h3{
 .efeito{
     text-decoration: underline;
 }
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+.code-img{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+    text-align: justify;
+    
+}
+.fazer-img{
+    width: 25%;
+    float: right;
+    margin-right: 30px;
+    text-align: justify;
+}
