@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de PDF com Marca D'Água</title>
+    <style>
+        #pdfContainer {
+            position: relative;
+            width: 80%;
+            height: 80vh;
+            border: 1px solid #ccc;
+            overflow: auto;
+            margin-top: 20px;
+        }
+        #watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            opacity: 0.2;
+            font-size: 36px;
+            color: red;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <h2>Envie um PDF para visualização com marca d'água</h2>
+    <input type="file" id="fileInput" accept=".pdf" />
+    <button onclick="handleFileUpload()">Visualizar PDF</button>
+    
+    <div id="pdfContainer">
+        <canvas id="pdfCanvas"></canvas>
+        <div id="watermark"></div>
+    </div>
+
+    <!-- Biblioteca PDF.js -->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="watermark.js"></script>
+</body>
+</html>

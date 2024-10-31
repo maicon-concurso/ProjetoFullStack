@@ -1,28 +1,44 @@
+body{
+    color: rgb(46, 46, 46);
+    font-family: "Merriweather", serif;
+    text-align: center;
+    margin: 0;
+    
+}
 .top-container{
     background-color: antiquewhite;
     text-align: center;
 }
-body{
-    font-family: "Merriweather", serif;
-    text-align: center;
-    margin: 0;
+.middle-container{
+  margin: 100px;
 }
 
+hr{
+    border: dotted #000 6px;
+    border-bottom: none;
+    width: 5%;
+
+}
 h1{
     color: #66BFBF;
     font-family: "Sacramento", cursive;
-    font-weight: normal;
-    line-height: 2;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
     
-}
-
-h2, h3{
+} 
+h2{
     font-family: "Montserrat", sans-serif;
     color: #66BFBF;
+    padding-top: 5%;
+    font-size:  2.5rem;
+    padding-bottom: 10px;
+    font-weight: normal;
 }
 
 h3{
-    color:#11999E
+    font-family: "Montserrat", sans-serif;
+    color: #66BFBF;
+    padding-top: 5%;
 }
 .efeito{
     text-decoration: underline;
@@ -46,4 +62,54 @@ h3{
     float: right;
     margin-right: 30px;
     text-align: justify;
+}
+
+.contact-message{
+    width: 40%;
+    margin: 40px auto 60px;
+}
+
+
+
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color: #ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding: 13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.bottom-container{
+    background-color:#11999E;
+    padding: 50px 0 20px;
+   }
+a{
+    color: #034042;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 20px;
+    font-weight: bold;
+}
+a:hover{
+    color: aqua;
+}
+.copyright{
+    color: #ffffff;
+    padding: 20px 0px;
+    font-size: 0.75rem;
 }
