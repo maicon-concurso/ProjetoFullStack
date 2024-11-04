@@ -6,58 +6,35 @@
     <title>Document</title>
     <style>
         html,
-        body{
-            margin: 20px;
-            height: calc(100% - 40%);
-            background-color: burlywood;
-        }
+       body{
+        margin: 20px;
+        height: calc(100% - 40px);
+        background-color: blanchedalmond;
+       }
 
-        div{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            border: solid 5px darkcyan;
-            background: #fff;
-        }
-        body{
-            display: grid;
-            grid-template-columns: 3fr 6fr 3fr;
-            grid-template-rows: 50% 25% 12% 12%;
-            grid-template-rows: 100px 1fr;
-            grid-template-rows: 100px auto;
-        }
-        .box8{
-            grid-row-start: 2;
-            grid-column-end: 4;
-            grid-row-start:3;
-            grid-row-end:5;
-        }
-        .box10,
-        .box11{
-            grid-row-start: 1;
-            grid-column-end: 3;
-            grid-row-start:5;
-            grid-row-end:span 1;
-        }
+       div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        border: solid 5px darkcyan;
+        background-color: beige;
+       }
 
-        .box10{
-            z-index: 10;
-        }
+       body {
+        display: grid;
+        grid-template-columns: 
+            [inicio] 1fr
+            [metade-1 meio-1] 1fr
+            [metade-2 meio-2] 1fr [fim];
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 20px;
+       }
     </style>
 </head>
 <body>
     <div class="box1">01</div>
     <div class="box2">02</div>
     <div class="box3">03</div>
-    <div class="box4">04</div>
-    <div class="box5">05</div>
-    <div class="box6">06</div>
-    <div class="box7">07</div>
-    <div class="box8">08</div>
-    <div class="box9">09</div>
-    <div class="box10">10</div>
-    <div class="box11">11</div>
-    <div class="box12">12</div>
 </body>
 </html>
